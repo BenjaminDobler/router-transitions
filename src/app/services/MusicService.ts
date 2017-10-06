@@ -13,7 +13,7 @@ export class MusicService {
     this.albums = [
       {
         name: 'Avocado',
-        cover: '/assets/cover/avocado.jpg'
+        cover: 'assets/cover/avocado.jpg'
       },
       {
         name: 'Ten',

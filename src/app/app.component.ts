@@ -57,7 +57,7 @@ export class AppComponent implements AfterViewInit{
 
   animationStarted(event: AnimationEvent) {
     console.log('************************* ANIMATION STARTED', event);
-
+    /*
     let a: any = this.an;
     if (a.delegate.engine.players.length > 0) {
       this.player = a.delegate.engine.players[0]._player;
@@ -65,6 +65,7 @@ export class AppComponent implements AfterViewInit{
 
 
     }
+    */
 
   }
 
