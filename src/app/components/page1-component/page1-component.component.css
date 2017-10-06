@@ -1,0 +1,36 @@
+:host {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #00ff00;
+}
+
+.cover-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #000;
+}
+
+.cover {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+  background: #ff00ff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.album-list {
+  list-style: none;
+}
+
+.album-item {
+  display: flex;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,15 @@
+
+<nav>
+  <a routerLink="/page1" routerLinkActive="active">Page 1</a>
+  <a routerLink="/page2" routerLinkActive="active">Page 2</a>
+</nav>
+
+<div class="container"
+     [@childRouteAnimation]="prepRouteState(routerOutlet)"
+     (@childRouteAnimation.start)="animationStarted($event)"
+     (@childRouteAnimation.done)="animationDone($event)">
+  <router-outlet #routerOutlet="outlet" ></router-outlet>
+</div>
+<button (click)="resume()">Play</button>
+
+

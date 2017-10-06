@@ -1,0 +1,9 @@
+<ul class="album-list" data-hero="alone">
+  <li *ngFor="let album of musicService.albums" (click)="selectAlbum(album)" class="album-item">
+    <div class="cover-container" data-hero="cover-bg" [attr.data-hero-active]="album === this.musicService.selectedAlbum" >
+      <div class="cover" data-hero="cover" [attr.data-hero-active]="album === this.musicService.selectedAlbum" [style.backgroundImage]="'url('+album.cover+')'"></div>
+    </div>
+    {{album.name}}
+  </li>
+</ul>
+<!--<div style="position:absolute;border-radius: 50px;bottom:0;right:0;width: 100px;height:100px;background:#ff00ff" data-hero="item1" data-hero-active="true"></div>-->
