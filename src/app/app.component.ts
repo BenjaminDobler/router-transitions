@@ -31,7 +31,7 @@ declare var ramjet: any;
 export class AppComponent implements AfterViewInit{
   title = 'app';
 
-
+  public sharedTransitions:boolean = true;
   @ViewChild('routerOutlet')
   public outlet:any;
 
@@ -90,7 +90,7 @@ export class AppComponent implements AfterViewInit{
 
     if (outlet.activatedRouteData['animation'] != this.currentRoute) {
       this.currentRoute = outlet.activatedRouteData['animation'];
-      if (this.sharedTransitionManager) {
+      if (this.sharedTransitionManager && this.sharedTransitions) {
         // This seems to be the only place i can find where the animation is not yet applied and the new view is already initialized (template bindings)
         this.sharedTransitionManager.animationStarted();
       }

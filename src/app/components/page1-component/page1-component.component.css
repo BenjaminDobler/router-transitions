@@ -5,32 +5,41 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: #00ff00;
+  background: #403f4d;
 }
 
 .cover-container {
   position: relative;
-  width: 100px;
-  height: 100px;
-  background: #000;
+  width: 120px;
+  height: 190px;
+  background: #4c4b5c;
 }
 
 .cover {
   position: absolute;
   top: 1px;
-  bottom: 1px;
   left: 1px;
   right: 1px;
+  height: 118px;
   background: #ff00ff;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.details {
+  position: absolute;
+  top: 125px;
+
+}
+
 .album-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .album-item {
   display: flex;
+  flex-direction: column;
   margin-bottom: 5px;
 }

@@ -8,6 +8,7 @@ import {Page1ComponentComponent} from './components/page1-component/page1-compon
 import {Page2Component} from './components/page2/page2.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MusicService} from './services/MusicService';
+import {FormsModule} from '@angular/forms';
 
 
 const appRoutes: Routes = [
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [MusicService],
   bootstrap: [AppComponent]
